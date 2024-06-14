@@ -119,7 +119,7 @@ getgenv().Evolution = {
                 ]]
             }
         },
-        ["Visible Check"] = true, -- // Will check if target is behind a wall
+        ["Visible Check"] = false, -- // Will check if target is behind a wall
         ["K.O Check"] = true, -- // Will check if target is knocked or grabbed
         ["Crew Check"] = false, -- // Will check if target is in your crew
         ["Friend Check"] = false, -- // Will check if target is your friend if not will not lock
@@ -162,7 +162,7 @@ getgenv().Evolution = {
     },
     ["Hit Sound"] = {
         ["Enabled"] = true, -- // Sound for when you hit a player
-        ["Hit Sound"] = "Neverlose", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
+        ["Hit Sound"] = "Rust", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
         ["Volume"] = 1,
     },
     ["Hit Logs"] = {
@@ -992,33 +992,33 @@ GetPrediction = function()
             end]]
         elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "custom" then 
             if PingNumber < 30 then
-                return 0.1261
+                return 0.10698238794
             elseif PingNumber < 40 then
-                return 0.125
+                return 0.116678929285
             elseif PingNumber < 50 then
-                return 0.127668
+                return 0.12637547063
             elseif PingNumber < 60 then
-                return 0.12731
+                return 0.136071012975
             elseif PingNumber < 70 then
-                return 0.13633
+                return 0.14576755432
             elseif PingNumber < 80 then
-                return 0.141340
+                return 0.1347
             elseif PingNumber < 90 then
-                return 0.14215
+                return 0.136
             elseif PingNumber < 100 then
-                return 0.143987
+                return 0.130340
             elseif PingNumber < 110 then
                 return 0.1455
             elseif PingNumber < 120 then
                 return 0.143765
             elseif PingNumber < 130 then
-                return 0.14333322
+                return 0.156692
             elseif PingNumber < 140 then
-                return 0.165773
+                return 0.1223333
             elseif PingNumber < 150 then
-                return 0.171
+                return 0.15
             elseif PingNumber < 160 then
-                return 0.1823111
+                return 0.16
             elseif PingNumber < 170 then
                 return 0.1923111
             elseif PingNumber < 180 then
