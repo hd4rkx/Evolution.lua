@@ -15,7 +15,7 @@ getgenv().Evolution = {
             ["FPS"] = 999, -- // Maximum FPS
         },
         ["Intro"] = true, -- // Will show a short intro
-        ["Stats"] = true, -- // Shows debug stats (BROKEN ON ELECTRON)
+        ["Stats"] = false, -- // Shows debug stats (BROKEN ON ELECTRON)
         ["Auto Join Discord"] = true, -- // Will Join Discord
         ["Allow Notifications"] = true, -- // Toggles all notifications
         ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
@@ -33,7 +33,7 @@ getgenv().Evolution = {
         ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
         ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
         ["Dot"] = true, -- // Visual (BROKEN ON ELECTRON)
-        ["Line"] = true, -- // Visual (BROKEN ON ELECTRON)
+        ["Line"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Shake"] = {
             ["Enabled"] = false, -- // Will Randomly Offset hit point
             ["X"] = 5, -- // Max X Position
