@@ -162,7 +162,7 @@ getgenv().Evolution = {
     },
     ["Hit Sound"] = {
         ["Enabled"] = true, -- // Sound for when you hit a player
-        ["Hit Sound"] = "Fatality", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
+        ["Hit Sound"] = "Neverlose", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
         ["Volume"] = 1,
     },
     ["Hit Logs"] = {
