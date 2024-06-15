@@ -26,7 +26,7 @@ getgenv().Evolution = {
         ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "C", -- // Keybind for Target mode
         ["Notify"] = true, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.133, -- // Prediction Value
+        ["Prediction"] = 0.1229, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
@@ -47,7 +47,7 @@ getgenv().Evolution = {
         ["Target Mode Bind"] = "C", -- // Keybind for Target modes
         ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
         ["Notify"] = true, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.133, -- // Prediction Value
+        ["Prediction"] = 0.1229, -- // Prediction Value
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = false,  -- // Sets target part to the nearest body part to your cursor
@@ -55,8 +55,8 @@ getgenv().Evolution = {
         ["Dot"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Line"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Smoothness"] = {
-            ["Enabled"] = false, -- // Prevents snapping when targeting
-            ["Value"] = 0.058, -- // Smoothness Value
+            ["Enabled"] = true, -- // Prevents snapping when targeting
+            ["Value"] = 0.051, -- // Smoothness Value
         },
         ["Shake"] = {
             ["Enabled"] = false, -- // Will Shake your camera randomly when targeting
@@ -68,7 +68,7 @@ getgenv().Evolution = {
     ["Global"] = {
         ["Auto Prediction"] = {
             ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
-            ["Version"] = "Default", -- // Default, Old, V2, Custom
+            ["Version"] = "Custom", -- // Default, Old, V2, Custom
             ["Custom Settings"] = { -- // Custom Values
                 ["Ping20"]  = 0.12746444,
                 ["Ping30"]  = 0.12746444,
@@ -120,7 +120,7 @@ getgenv().Evolution = {
             }
         },
         ["Visible Check"] = false, -- // Will check if target is behind a wall
-        ["K.O Check"] = true, -- // Will check if target is knocked or grabbed
+        ["K.O Check"] = false, -- // Will check if target is knocked or grabbed
         ["Crew Check"] = false, -- // Will check if target is in your crew
         ["Friend Check"] = false, -- // Will check if target is your friend if not will not lock
         ["Distance"] = { -- // Not lock onto people if they are too far away
@@ -163,7 +163,7 @@ getgenv().Evolution = {
     ["Hit Sound"] = {
         ["Enabled"] = true, -- // Sound for when you hit a player
         ["Hit Sound"] = "Rust", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
-        ["Volume"] = 1,
+        ["Volume"] = 0.7,
     },
     ["Hit Logs"] = {
         ["Enabled"] = false, -- // Logs when you hit a player
@@ -992,37 +992,37 @@ GetPrediction = function()
             end]]
         elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "custom" then 
             if PingNumber < 30 then
-                return 0.10698238794
+                return 0.12746444
             elseif PingNumber < 40 then
-                return 0.116678929285
+                return 0.12746444
             elseif PingNumber < 50 then
-                return 0.12637547063
+                return 0.11243
             elseif PingNumber < 60 then
-                return 0.136071012975
+                return 0.11243
             elseif PingNumber < 70 then
-                return 0.14576755432
+                return 0.12533
             elseif PingNumber < 80 then
-                return 0.1347
+                return 0.169
             elseif PingNumber < 90 then
-                return 0.136
+                return 0.13626
             elseif PingNumber < 100 then
-                return 0.130340
+                return 0.13626
             elseif PingNumber < 110 then
-                return 0.1455
+                return 0.146
             elseif PingNumber < 120 then
-                return 0.143765
+                return 0.149
             elseif PingNumber < 130 then
-                return 0.156692
+                return 0.151
             elseif PingNumber < 140 then
-                return 0.1223333
+                return 0.1652131
             elseif PingNumber < 150 then
-                return 0.15
+                return 0.125333
             elseif PingNumber < 160 then
-                return 0.16
+                return 0.1223333
             elseif PingNumber < 170 then
-                return 0.1923111
+                return 0.15
             elseif PingNumber < 180 then
-                return 0.19284
+                return 0.1923111
             elseif PingNumber < 190 then
                 return 0.206547
             elseif PingNumber < 200 then
