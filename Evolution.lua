@@ -6,7 +6,7 @@ getgenv().Evolution = {
             ["Key"] = "", -- // Enter your Evolution Key
         },
         ["Internal"] = {
-            ["Enabled"] = true, -- // Shows internal ui for evolution
+            ["Enabled"] = false, -- // Shows internal ui for evolution
             ["Auto Show"] = false, -- // Will show the ui when you execute
             ["Bind"] = "V", -- // Default keybind to toggle ui
         },
@@ -68,7 +68,7 @@ getgenv().Evolution = {
     ["Global"] = {
         ["Auto Prediction"] = {
             ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
-            ["Version"] = "Custom", -- // Default, Old, V2, Custom
+            ["Version"] = "V2", -- // Default, Old, V2, Custom
             ["Custom Settings"] = { -- // Custom Values
                 ["Ping20"]  = 0.12746444,
                 ["Ping30"]  = 0.12746444,
