@@ -8,7 +8,7 @@ getgenv().Evolution = {
         ["Internal"] = {
             ["Enabled"] = false, -- // Shows internal ui for evolution
             ["Auto Show"] = false, -- // Will show the ui when you execute
-            ["Bind"] = "V", -- // Default keybind to toggle ui
+            ["Bind"] = "Q", -- // Default keybind to toggle ui
         },
         ["FPS Unlocker"] = { -- // Unlocks your fps (BROKEN ON ELECTRON)
             ["Enabled"] = true, -- // Will unlock your FPS
@@ -25,14 +25,14 @@ getgenv().Evolution = {
         ["Enabled"] = true, -- // Mouse Redirection
         ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "V", -- // Keybind for Target mode
-        ["Notify"] = true, -- // Sends notifcation when targeting someone
+        ["Notify"] = false, -- // Sends notifcation when targeting someone
         ["Prediction"] = 0.1229, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
         ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
-        ["Dot"] = true, -- // Visual (BROKEN ON ELECTRON)
+        ["Dot"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Line"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Shake"] = {
             ["Enabled"] = false, -- // Will Randomly Offset hit point
@@ -46,7 +46,7 @@ getgenv().Evolution = {
         ["Mode"] = "Target_toggle", -- // Select mode to select target (FOV, Target_toggle, Target_hold)
         ["Target Mode Bind"] = "V", -- // Keybind for Target modes
         ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
-        ["Notify"] = true, -- // Sends notifcation when targeting someone
+        ["Notify"] = false, -- // Sends notifcation when targeting someone
         ["Prediction"] = 0.1229, -- // Prediction Value
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
@@ -68,7 +68,7 @@ getgenv().Evolution = {
     ["Global"] = {
         ["Auto Prediction"] = {
             ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
-            ["Version"] = "Custom", -- // Default, Old, V2, Custom
+            ["Version"] = "Default", -- // Default, Old, V2, Custom
             ["Custom Settings"] = { -- // Custom Values
                 ["Ping20"]  = 0.12746444,
                 ["Ping30"]  = 0.12746444,
@@ -119,7 +119,7 @@ getgenv().Evolution = {
                 ]]
             }
         },
-        ["Visible Check"] = false, -- // Will check if target is behind a wall
+        ["Visible Check"] = true, -- // Will check if target is behind a wall
         ["K.O Check"] = false, -- // Will check if target is knocked or grabbed
         ["Crew Check"] = false, -- // Will check if target is in your crew
         ["Friend Check"] = false, -- // Will check if target is your friend if not will not lock
@@ -157,13 +157,13 @@ getgenv().Evolution = {
         ["Jump Offset"] = 0.08, -- // Jump Offset
         ["Cam Lock Smoothness"] = {
             ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
-            ["New Smoothness"] = 0.58, -- // Smoothness value
+            ["New Smoothness"] = 0.08, -- // Smoothness value
         }
     },
     ["Hit Sound"] = {
-        ["Enabled"] = true, -- // Sound for when you hit a player
+        ["Enabled"] = false, -- // Sound for when you hit a player
         ["Hit Sound"] = "Rust", -- // Minecraft, Bameware, Bubble, Pick, Pop, Rust, Sans, Fart, Big, Vine, Bruh, Skeet, Neverlose, Fatality, Bonk
-        ["Volume"] = 0.7,
+        ["Volume"] = 1,
     },
     ["Hit Logs"] = {
         ["Enabled"] = false, -- // Logs when you hit a player
