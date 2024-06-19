@@ -26,7 +26,7 @@ getgenv().Evolution = {
         ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "V", -- // Keybind for Target mode
         ["Notify"] = false, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.1229, -- // Prediction Value
+        ["Prediction"] = 0.132, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
@@ -47,7 +47,7 @@ getgenv().Evolution = {
         ["Target Mode Bind"] = "V", -- // Keybind for Target modes
         ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
         ["Notify"] = false, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.1229, -- // Prediction Value
+        ["Prediction"] = 0.132, -- // Prediction Value
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = false,  -- // Sets target part to the nearest body part to your cursor
@@ -68,7 +68,7 @@ getgenv().Evolution = {
     ["Global"] = {
         ["Auto Prediction"] = {
             ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
-            ["Version"] = "Default", -- // Default, Old, V2, Custom
+            ["Version"] = "Custom", -- // Default, Old, V2, Custom
             ["Custom Settings"] = { -- // Custom Values
                 ["Ping20"]  = 0.12746444,
                 ["Ping30"]  = 0.12746444,
@@ -991,42 +991,44 @@ GetPrediction = function()
                 return 0.9
             end]]
         elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "custom" then 
+	    if PingNumber < 20 then
+		return 0.157
             if PingNumber < 30 then
-                return 0.12746444
+                return 0.155
             elseif PingNumber < 40 then
-                return 0.12746444
+                return 0.145
             elseif PingNumber < 50 then
-                return 0.11243
+                return 0.15038
             elseif PingNumber < 60 then
-                return 0.11243
+                return 0.15038
             elseif PingNumber < 70 then
-                return 0.12533
+                return 0.136
             elseif PingNumber < 80 then
-                return 0.169
+                return 0.133
             elseif PingNumber < 90 then
-                return 0.13626
+                return 0.130
             elseif PingNumber < 100 then
-                return 0.13626
+                return 0.127
             elseif PingNumber < 110 then
-                return 0.146
+                return 0.124
             elseif PingNumber < 120 then
-                return 0.149
+                return 0.120
             elseif PingNumber < 130 then
-                return 0.151
+                return 0.116
             elseif PingNumber < 140 then
-                return 0.1652131
+                return 0.113
             elseif PingNumber < 150 then
-                return 0.125333
+                return 0.110
             elseif PingNumber < 160 then
-                return 0.1223333
+                return 0.18
             elseif PingNumber < 170 then
                 return 0.15
             elseif PingNumber < 180 then
-                return 0.1923111
+                return 0.12
             elseif PingNumber < 190 then
-                return 0.206547
+                return 0.10
             elseif PingNumber < 200 then
-                return 0.223092
+                return 0.20
             elseif PingNumber < 210 then
                 return 0.2292466
             elseif PingNumber < 220 then
