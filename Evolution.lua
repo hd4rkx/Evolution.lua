@@ -993,7 +993,7 @@ GetPrediction = function()
         elseif string.lower(Evolution.Global["Auto Prediction"]["Version"]) == "custom" then 
 	    if PingNumber < 20 then
 		return 0.157
-            if PingNumber < 30 then
+	    elseif PingNumber < 30 then
                 return 0.155
             elseif PingNumber < 40 then
                 return 0.145
