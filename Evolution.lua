@@ -14,8 +14,8 @@ getgenv().Evolution = {
             ["Enabled"] = true, -- // Will unlock your FPS
             ["FPS"] = 999, -- // Maximum FPS
         },
-        ["Intro"] = true, -- // Will show a short intro
-        ["Stats"] = true, -- // Shows debug stats (BROKEN ON ELECTRON)
+        ["Intro"] = false, -- // Will show a short intro
+        ["Stats"] = false, -- // Shows debug stats (BROKEN ON ELECTRON)
         ["Auto Join Discord"] = true, -- // Will Join Discord
         ["Allow Notifications"] = true, -- // Toggles all notifications
         ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
