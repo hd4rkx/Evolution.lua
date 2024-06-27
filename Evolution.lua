@@ -2,7 +2,7 @@ getgenv().Evolution = {
     ["Options"] = {
         ["Version"] = "3.1.4-Electron", -- // Dont touch this is to make sure your using the correct table
         ["Stealth Mode"] = {
-            ["Enabled"] = true, -- // Will hide the loader and just load the script 
+            ["Enabled"] = false, -- // Will hide the loader and just load the script 
             ["Key"] = "", -- // Enter your Evolution Key
         },
         ["Internal"] = {
@@ -15,7 +15,7 @@ getgenv().Evolution = {
             ["FPS"] = 999, -- // Maximum FPS
         },
         ["Intro"] = true, -- // Will show a short intro
-        ["Stats"] = false, -- // Shows debug stats (BROKEN ON ELECTRON)
+        ["Stats"] = true, -- // Shows debug stats (BROKEN ON ELECTRON)
         ["Auto Join Discord"] = true, -- // Will Join Discord
         ["Allow Notifications"] = true, -- // Toggles all notifications
         ["Notifcation Type"] = "xaxa", -- // Akali, Roblox, xaxa
