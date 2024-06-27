@@ -2,7 +2,7 @@ getgenv().Evolution = {
     ["Options"] = {
         ["Version"] = "3.1.4-Electron", -- // Dont touch this is to make sure your using the correct table
         ["Stealth Mode"] = {
-            ["Enabled"] = false, -- // Will hide the loader and just load the script 
+            ["Enabled"] = true, -- // Will hide the loader and just load the script 
             ["Key"] = "", -- // Enter your Evolution Key
         },
         ["Internal"] = {
@@ -26,7 +26,7 @@ getgenv().Evolution = {
         ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "V", -- // Keybind for Target mode
         ["Notify"] = false, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.1437, -- // Prediction Value
+        ["Prediction"] = 0.0.14253, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
         ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
